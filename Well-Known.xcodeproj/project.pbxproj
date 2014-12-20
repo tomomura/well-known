@@ -14,6 +14,9 @@
 		A3964A9C1A33696600908E6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3964A9B1A33696600908E6A /* Images.xcassets */; };
 		A3964A9F1A33696600908E6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3964A9D1A33696600908E6A /* LaunchScreen.xib */; };
 		A3964AAB1A33696600908E6A /* Well_KnownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3964AAA1A33696600908E6A /* Well_KnownTests.swift */; };
+		C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45067781A45727C00B591E6 /* Introduction.storyboard */; };
+		C450677B1A4573E600B591E6 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677A1A4573E600B591E6 /* Config.storyboard */; };
+		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		A3964AA41A33696600908E6A /* Well-KnownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Well-KnownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3964AA91A33696600908E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3964AAA1A33696600908E6A /* Well_KnownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Well_KnownTests.swift; sourceTree = "<group>"; };
+		C45067781A45727C00B591E6 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
+		C450677A1A4573E600B591E6 /* Config.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
+		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				A3964A911A33696600908E6A /* AppDelegate.swift */,
 				A3964A961A33696600908E6A /* ViewController.swift */,
 				A3964A981A33696600908E6A /* Main.storyboard */,
+				C45067781A45727C00B591E6 /* Introduction.storyboard */,
+				C450677A1A4573E600B591E6 /* Config.storyboard */,
+				C450677C1A45740B00B591E6 /* Home.storyboard */,
 				A3964A9B1A33696600908E6A /* Images.xcassets */,
 				A3964A9D1A33696600908E6A /* LaunchScreen.xib */,
 				A3964A931A33696600908E6A /* Well_Known.xcdatamodeld */,
@@ -196,7 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C450677B1A4573E600B591E6 /* Config.storyboard in Resources */,
+				C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */,
 				A3964A9A1A33696600908E6A /* Main.storyboard in Resources */,
+				C450677D1A45740B00B591E6 /* Home.storyboard in Resources */,
 				A3964A9F1A33696600908E6A /* LaunchScreen.xib in Resources */,
 				A3964A9C1A33696600908E6A /* Images.xcassets in Resources */,
 			);
@@ -412,6 +424,7 @@
 				A3964AB01A33696600908E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3964AB11A33696600908E6A /* Build configuration list for PBXNativeTarget "Well-KnownTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				A3964AB31A33696600908E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
