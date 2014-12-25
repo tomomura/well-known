@@ -17,6 +17,8 @@
 		C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45067781A45727C00B591E6 /* Introduction.storyboard */; };
 		C450677B1A4573E600B591E6 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677A1A4573E600B591E6 /* Config.storyboard */; };
 		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
+		C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */; };
+		C4DA7F561A4C73D800011F6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA7F551A4C73D800011F6A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C45067781A45727C00B591E6 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		C450677A1A4573E600B591E6 /* Config.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFHomeViewController.swift; sourceTree = "<group>"; };
+		C4DA7F551A4C73D800011F6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DA7F561A4C73D800011F6A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +72,7 @@
 		A3964A831A33696600908E6A = {
 			isa = PBXGroup;
 			children = (
+				C4DA7F551A4C73D800011F6A /* MapKit.framework */,
 				A3964A8E1A33696600908E6A /* Well-Known */,
 				A3964AA71A33696600908E6A /* Well-KnownTests */,
 				A3964A8D1A33696600908E6A /* Products */,
@@ -85,6 +91,7 @@
 		A3964A8E1A33696600908E6A /* Well-Known */ = {
 			isa = PBXGroup;
 			children = (
+				C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */,
 				A3964A911A33696600908E6A /* AppDelegate.swift */,
 				A3964A961A33696600908E6A /* ViewController.swift */,
 				A3964A981A33696600908E6A /* Main.storyboard */,
@@ -231,6 +238,7 @@
 				A3964A971A33696600908E6A /* ViewController.swift in Sources */,
 				A3964A921A33696600908E6A /* AppDelegate.swift in Sources */,
 				A3964A951A33696600908E6A /* Well_Known.xcdatamodeld in Sources */,
+				C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
