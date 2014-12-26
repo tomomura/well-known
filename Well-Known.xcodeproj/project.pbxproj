@@ -19,6 +19,7 @@
 		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
 		C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */; };
 		C4DA7F561A4C73D800011F6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA7F551A4C73D800011F6A /* MapKit.framework */; };
+		C4DA7F591A4DA62E00011F6A /* DFPicerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA7F581A4DA62E00011F6A /* DFPicerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFHomeViewController.swift; sourceTree = "<group>"; };
 		C4DA7F551A4C73D800011F6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C4DA7F581A4DA62E00011F6A /* DFPicerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFPicerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 		A3964A8E1A33696600908E6A /* Well-Known */ = {
 			isa = PBXGroup;
 			children = (
-				C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */,
+				C4DA7F571A4DA52000011F6A /* ViewController */,
 				A3964A911A33696600908E6A /* AppDelegate.swift */,
 				A3964A961A33696600908E6A /* ViewController.swift */,
 				A3964A981A33696600908E6A /* Main.storyboard */,
@@ -129,6 +131,15 @@
 				A3964AA91A33696600908E6A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4DA7F571A4DA52000011F6A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */,
+				C4DA7F581A4DA62E00011F6A /* DFPicerViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3964A971A33696600908E6A /* ViewController.swift in Sources */,
+				C4DA7F591A4DA62E00011F6A /* DFPicerViewController.swift in Sources */,
 				A3964A921A33696600908E6A /* AppDelegate.swift in Sources */,
 				A3964A951A33696600908E6A /* Well_Known.xcdatamodeld in Sources */,
 				C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */,

@@ -19,12 +19,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         view.backgroundColor = UIColor.whiteColor()
         
         initNavigation()
-        
-//        pic.center = view.center
-//        // サイズを指定する.
-//        pic.frame = CGRectMake(0, 0, self.view.bounds.width, 30.0)
-//        pic.delegate = self
-//        pic.dataSource = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,6 +77,8 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
 //        button.setTitle("押された災害", forState: .Normal)
 //        TODO: 表示させる災害の種類を選択させるものをモーダルで表示
     }
+
+// MARK: ピッカービュー
 
     /*
     // MARK: - Navigation

@@ -20,6 +20,32 @@
             </objects>
             <point key="canvasLocation" x="-454" y="-50"/>
         </scene>
+        <!--Picer View Controller-->
+        <scene sceneID="VOr-jO-0yj">
+            <objects>
+                <viewController id="wRb-Hg-oFB" customClass="DFPicerViewController" customModule="Well_Known" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ans-4x-rSP"/>
+                        <viewControllerLayoutGuide type="bottom" id="62D-ij-qiZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="swN-Fx-J3J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5i-4B-DKK">
+                                <rect key="frame" x="-10" y="438" width="610" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pic" destination="T5i-4B-DKK" id="VRy-mm-NQM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpk-TF-78c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="-322"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="5DG-R0-auU">
             <objects>
