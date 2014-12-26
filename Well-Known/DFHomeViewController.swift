@@ -12,6 +12,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
     let pic = UIPickerView()
     let displayButton = UIButton()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,6 +77,19 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
     func touchDisplayButton(button: UIButton) {
 //        button.setTitle("押された災害", forState: .Normal)
 //        TODO: 表示させる災害の種類を選択させるものをモーダルで表示
+
+        modalPresentationStyle = UIModalPresentationStyle.CurrentContext
+        definesPresentationContext = true
+        providesPresentationContextTransitionStyle = true
+//        definesPresentationContext = YES
+//        self.providesPresentationContextTransitionStyle = YES
+        
+        let next = DFPicerViewController()
+        next.definesPresentationContext = true
+        next.providesPresentationContextTransitionStyle = true
+        next.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
+        
+        presentViewController(next, animated: true, completion: nil)
     }
 
 // MARK: ピッカービュー

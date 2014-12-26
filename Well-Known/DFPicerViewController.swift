@@ -9,11 +9,12 @@
 import UIKit
 
 class DFPicerViewController: ViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    @IBOutlet weak var pic: UIPickerView!
+    let pic = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.opaque = false
+        view.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
         initPicerView()
     }
 
@@ -27,7 +28,7 @@ class DFPicerViewController: ViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 10
+        return 5
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
@@ -37,9 +38,10 @@ class DFPicerViewController: ViewController, UIPickerViewDataSource, UIPickerVie
     // MARK: ピッカービュー
     func initPicerView() {
         pic.center = view.center
-        pic.frame = CGRectMake(0, 0, self.view.bounds.width, 30.0)
+        pic.frame = CGRectMake(0, view.bounds.height - 162.0, view.bounds.width, 162.0)
         pic.delegate = self
         pic.dataSource = self
+        view.addSubview(pic)
     }
     
 

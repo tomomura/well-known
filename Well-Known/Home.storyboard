@@ -32,15 +32,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5i-4B-DKK">
-                                <rect key="frame" x="-10" y="438" width="610" height="162"/>
-                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-CL-k3E">
+                                <rect key="frame" x="232" y="269" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="pic" destination="T5i-4B-DKK" id="VRy-mm-NQM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpk-TF-78c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,6 +50,15 @@
         <scene sceneID="5DG-R0-auU">
             <objects>
                 <viewController id="GQg-gx-xc6" customClass="DFHomeViewController" customModule="Well_Known" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gxn-Sf-Yhg"/>
+                        <viewControllerLayoutGuide type="bottom" id="sZW-Bw-3Kn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Rs-fX-ngg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <navigationItem key="navigationItem" id="PlF-f9-75p">
                         <barButtonItem key="leftBarButtonItem" title="config" id="e27-pF-Uu5"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ar-Rz-RF6"/>
