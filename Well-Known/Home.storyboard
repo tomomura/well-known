@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="-454" y="-50"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="5DG-R0-auU">
             <objects>
-                <viewController id="GQg-gx-xc6" customClass="ViewController" customModule="Well_Known" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GQg-gx-xc6" customClass="DFHomeViewController" customModule="Well_Known" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PlF-f9-75p">
                         <barButtonItem key="leftBarButtonItem" title="config" id="e27-pF-Uu5"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ar-Rz-RF6"/>
@@ -34,4 +34,5 @@
             <point key="canvasLocation" x="311" y="385"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
