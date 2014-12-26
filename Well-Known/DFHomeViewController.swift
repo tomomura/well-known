@@ -81,6 +81,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         modalPresentationStyle = UIModalPresentationStyle.CurrentContext
         definesPresentationContext = true
         providesPresentationContextTransitionStyle = true
+        view.opaque = false
 //        definesPresentationContext = YES
 //        self.providesPresentationContextTransitionStyle = YES
         
@@ -88,7 +89,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         next.definesPresentationContext = true
         next.providesPresentationContextTransitionStyle = true
         next.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
-        
+        next.view.opaque = false
         presentViewController(next, animated: true, completion: nil)
     }
 

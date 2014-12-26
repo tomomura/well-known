@@ -13,8 +13,8 @@ class DFPicerViewController: ViewController, UIPickerViewDataSource, UIPickerVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.opaque = false
-        view.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
+        
+        view.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
         initPicerView()
     }
 
