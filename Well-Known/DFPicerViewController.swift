@@ -38,7 +38,7 @@ class DFPicerViewController: ViewController, UIPickerViewDataSource, UIPickerVie
     // MARK: ピッカービュー
     func initPicerView() {
         pic.center = view.center
-        pic.frame = CGRectMake(0, view.bounds.height - 162.0, view.bounds.width, 162.0)
+        pic.frame = CGRectMake(0, view.bounds.height - 162.0 - 300.0, view.bounds.width, 162.0)
         pic.delegate = self
         pic.dataSource = self
         view.addSubview(pic)
