@@ -12,28 +12,17 @@ import MapKit
 class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     let pic = UIPickerView()
     let displayButton = UIButton()
-    @IBOutlet weak var map: MKMapView!
+    var map = MKMapView()
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.requestAlwaysAuthorization()
-        
-        // Do any additional setup after loading the view.
+
         view.backgroundColor = UIColor.whiteColor()
         
         initNavigation()
-        map.delegate = self
-        
-        locationManager.delegate = self
-//        if( atof(UIDevice.currentDevice().systemVersion) >= 8.0 ) {
-            // iOS8の場合は、以下の何れかの処理を追加しないと位置の取得ができない
-            // アプリがアクティブな場合だけ位置取得する場合
-        
-            // アプリが非アクティブな場合でも位置取得する場合
-            //[locationManager requestAlwaysAuthorization];
-//        }
-        locationManager.startUpdatingLocation()
+        initMap()
+        initLocationManager()
     }
 
     override func didReceiveMemoryWarning() {
@@ -88,16 +77,12 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func touchDisplayButton(button: UIButton) {
-//        button.setTitle("押された災害", forState: .Normal)
 //        TODO: 表示させる災害の種類を選択させるものをモーダルで表示
-
         modalPresentationStyle = UIModalPresentationStyle.CurrentContext
         definesPresentationContext = true
         providesPresentationContextTransitionStyle = true
         view.opaque = false
-//        definesPresentationContext = YES
-//        self.providesPresentationContextTransitionStyle = YES
-        
+
         let next = DFPicerViewController()
         next.definesPresentationContext = true
         next.providesPresentationContextTransitionStyle = true
@@ -106,27 +91,38 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         presentViewController(next, animated: true, completion: nil)
     }
     
-// MARK: - LocationManager DelegateMethods
+// MARK: - LocationManager
+    func initLocationManager() {
+        locationManager.delegate = self
+        if( atof(UIDevice.currentDevice().systemVersion) >= 8.0 ) {
+            // iOS8の場合は、以下の何れかの処理を追加しないと位置の取得ができない
+            // アプリが非アクティブな場合でも位置取得する場合
+            locationManager.requestAlwaysAuthorization()
+        }
+        locationManager.startUpdatingLocation()
+    }
+// MARK: DelegateMethods
     // 位置情報が更新されるたびに呼ばれる
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
-        NSLog("aa")
-        // 中心点の緯度経度.
-        let myLat: CLLocationDegrees = newLocation.coordinate.latitude
-        let myLon: CLLocationDegrees = newLocation.coordinate.longitude
-        let myCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(myLat, myLon)
-        
-        // 縮尺.
-        let myLatDist : CLLocationDistance = 100
-        let myLonDist : CLLocationDistance = 100
-        
-        // Regionを作成.
-        let myRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(myCoordinate, myLatDist, myLonDist);
-        
-        // MapViewに反映.
-        map.setRegion(myRegion, animated: true)
+        // TODO: ピンの更新処理かな？
+    }
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        // TODO: ピンの更新処理かな？
     }
 
-// MARK: ピッカービュー
+// MARK: - map
+    func initMap() {
+        map.delegate = self
+
+        map.frame = view.bounds
+        // マップにユーザの現在地を表示
+        map.showsUserLocation = true
+        // マップの中心地がユーザの現在地を追従するように設定
+        map.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
+        
+        view.addSubview(map)
+    }
 
     /*
     // MARK: - Navigation

@@ -57,20 +57,12 @@
                     <view key="view" contentMode="scaleToFill" id="9Rs-fX-ngg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGG-jk-YCl">
-                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="PlF-f9-75p">
                         <barButtonItem key="leftBarButtonItem" title="config" id="e27-pF-Uu5"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ar-Rz-RF6"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="map" destination="sGG-jk-YCl" id="AdR-Nv-TZR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaG-9m-33C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
