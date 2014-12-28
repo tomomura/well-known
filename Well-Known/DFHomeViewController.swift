@@ -12,8 +12,9 @@ import MapKit
 class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     let pic = UIPickerView()
     let displayButton = UIButton()
-    var map = MKMapView()
+    let map = MKMapView()
     let locationManager = CLLocationManager()
+    let moveNowPositionButton = UIButton() // ユーザの現在地に視点を戻す
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         initNavigation()
         initMap()
         initLocationManager()
+        initMoveNowPositionButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +43,8 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return "test"
     }
-    
+
+// MARK: - Navigation
     func initNavigation() {
         initDisplayButton()
     }
@@ -116,7 +119,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         map.delegate = self
 
         map.frame = view.bounds
-        // マップにユーザの現在地を表示
+        // マップにユーザの現在示
         map.showsUserLocation = true
         // マップの中心地がユーザの現在地を追従するように設定
         map.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
@@ -124,6 +127,46 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         view.addSubview(map)
     }
 
+// MARK: - moveNowPositionButton
+    func initMoveNowPositionButton() {
+        //表示されるテキスト
+        moveNowPositionButton.setTitle("現在地", forState: .Normal)
+        
+        //テキストの色
+        moveNowPositionButton.setTitleColor(UIColor.redColor(), forState: .Normal)
+
+        
+        
+        let kButtonWidth:CGFloat  = view.bounds.width  * 0.25
+        let kButtonHeight:CGFloat = kButtonWidth * 0.5
+        
+        //サイズ
+        moveNowPositionButton.frame = CGRectMake(0, 0, kButtonWidth, kButtonHeight)
+        
+        // ボーダー
+        moveNowPositionButton.layer.borderWidth = 1.0
+        
+        moveNowPositionButton.layer.borderColor = UIColor.redColor().CGColor
+        
+        //配置場所
+//        moveNowPositionButton.layer.position = CGPoint(
+//            x: kButtonWidth / 2.0 + view.bounds.width * 0.1,
+//            y:view.bounds.height - kButtonHeight)
+        moveNowPositionButton.layer.position = CGPoint(
+            x: view.bounds.width - kButtonWidth / 2.0 - view.bounds.width * 0.1,
+            y:view.bounds.height - kButtonHeight)
+
+        
+        //ボタンをタップした時に実行するメソッドを指定
+        moveNowPositionButton.addTarget(self, action: "touchMoveNowPositionButton:", forControlEvents:.TouchUpInside)
+        
+        view.addSubview(moveNowPositionButton)
+    }
+    
+    func touchMoveNowPositionButton(button: UIButton) {
+        map.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
