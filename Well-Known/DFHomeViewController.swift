@@ -167,6 +167,26 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         map.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
     }
     
+// MARK: - OverrideMethods
+    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+        switch fromInterfaceOrientation {
+        case UIInterfaceOrientation.Portrait:
+            NSLog("portrait")
+            map.frame = view.bounds
+            break
+        case UIInterfaceOrientation.LandscapeLeft:
+            NSLog("LandscapeLeft")
+            map.frame = view.bounds
+            break
+        case UIInterfaceOrientation.LandscapeRight:
+            NSLog("LandscapeRight")
+            map.frame = view.bounds
+            break
+        default:
+            break
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
