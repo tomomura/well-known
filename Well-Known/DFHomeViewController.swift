@@ -25,6 +25,8 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         initMap()
         initLocationManager()
         initMoveNowPositionButton()
+        
+        resetAllLayout()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,22 +58,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         
         //テキストの色
         displayButton.setTitleColor(UIColor.redColor(), forState: .Normal)
-        
-        
-        //タップした状態のテキスト
-//        displayButton.setTitle("Tapped!", forState: .Highlighted)
-        
-        //タップした状態の色
-//        displayButton.setTitleColor(, forState: .Highlighted)
-        
-        //サイズ
-        displayButton.frame = CGRectMake(0, 0, 60, 30)
-        
-        //タグ番号
-//        displayButton.tag = 1
-        
-        //配置場所
-        displayButton.layer.position = CGPoint(x: 0, y:0)
+
         
         //ボタンをタップした時に実行するメソッドを指定
         displayButton.addTarget(self, action: "touchDisplayButton:", forControlEvents:.TouchUpInside)
@@ -92,6 +79,14 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         next.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
         next.view.opaque = false
         presentViewController(next, animated: true, completion: nil)
+    }
+    
+    func setLayoutDisplayButton() {
+        //サイズ
+        displayButton.frame = CGRectMake(0, 0, 60, 30)
+        
+        //配置場所
+        displayButton.layer.position = CGPoint(x: 0, y:0)
     }
     
 // MARK: - LocationManager
@@ -118,7 +113,6 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
     func initMap() {
         map.delegate = self
 
-        map.frame = view.bounds
         // マップにユーザの現在示
         map.showsUserLocation = true
         // マップの中心地がユーザの現在地を追従するように設定
@@ -126,38 +120,22 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         
         view.addSubview(map)
     }
+    
+    func setLayoutMap() {
+        map.frame = view.bounds
+    }
 
 // MARK: - moveNowPositionButton
     func initMoveNowPositionButton() {
-        //表示されるテキスト
-        moveNowPositionButton.setTitle("現在地", forState: .Normal)
         
-        //テキストの色
+        moveNowPositionButton.setTitle("現在地", forState: .Normal)
+
         moveNowPositionButton.setTitleColor(UIColor.redColor(), forState: .Normal)
 
-        
-        
-        let kButtonWidth:CGFloat  = view.bounds.width  * 0.25
-        let kButtonHeight:CGFloat = kButtonWidth * 0.5
-        
-        //サイズ
-        moveNowPositionButton.frame = CGRectMake(0, 0, kButtonWidth, kButtonHeight)
-        
-        // ボーダー
         moveNowPositionButton.layer.borderWidth = 1.0
         
         moveNowPositionButton.layer.borderColor = UIColor.redColor().CGColor
         
-        //配置場所
-//        moveNowPositionButton.layer.position = CGPoint(
-//            x: kButtonWidth / 2.0 + view.bounds.width * 0.1,
-//            y:view.bounds.height - kButtonHeight)
-        moveNowPositionButton.layer.position = CGPoint(
-            x: view.bounds.width - kButtonWidth / 2.0 - view.bounds.width * 0.1,
-            y:view.bounds.height - kButtonHeight)
-
-        
-        //ボタンをタップした時に実行するメソッドを指定
         moveNowPositionButton.addTarget(self, action: "touchMoveNowPositionButton:", forControlEvents:.TouchUpInside)
         
         view.addSubview(moveNowPositionButton)
@@ -167,25 +145,30 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         map.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
     }
     
+    func setLayoutMoveNowPositionButton() {
+        let kButtonWidth:CGFloat  = 60//view.bounds.width  * 0.25
+        let kButtonHeight:CGFloat = kButtonWidth * 0.5
+        
+        moveNowPositionButton.frame = CGRectMake(0, 0, kButtonWidth, kButtonHeight)
+        
+        moveNowPositionButton.layer.position = CGPoint(
+            x: view.bounds.width - kButtonWidth / 2.0 - view.bounds.width * 0.1,
+            y:view.bounds.height - kButtonHeight)
+    }
+    
 // MARK: - OverrideMethods
     override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-        switch fromInterfaceOrientation {
-        case UIInterfaceOrientation.Portrait:
-            NSLog("portrait")
-            map.frame = view.bounds
-            break
-        case UIInterfaceOrientation.LandscapeLeft:
-            NSLog("LandscapeLeft")
-            map.frame = view.bounds
-            break
-        case UIInterfaceOrientation.LandscapeRight:
-            NSLog("LandscapeRight")
-            map.frame = view.bounds
-            break
-        default:
-            break
-        }
+        resetAllLayout()
     }
+    
+// MARK: - Layout
+    // 全てのパーツを配置しなおす
+    func resetAllLayout() {
+        setLayoutDisplayButton()
+        setLayoutMap()
+        setLayoutMoveNowPositionButton()
+    }
+    
     
     /*
     // MARK: - Navigation
