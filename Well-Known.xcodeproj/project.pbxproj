@@ -14,6 +14,7 @@
 		A3964A9C1A33696600908E6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3964A9B1A33696600908E6A /* Images.xcassets */; };
 		A3964A9F1A33696600908E6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3964A9D1A33696600908E6A /* LaunchScreen.xib */; };
 		A3964AAB1A33696600908E6A /* Well_KnownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3964AAA1A33696600908E6A /* Well_KnownTests.swift */; };
+		C419D1721A524AF20054CEC2 /* DFConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419D1711A524AF20054CEC2 /* DFConfigController.swift */; };
 		C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45067781A45727C00B591E6 /* Introduction.storyboard */; };
 		C450677B1A4573E600B591E6 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677A1A4573E600B591E6 /* Config.storyboard */; };
 		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
@@ -45,6 +46,7 @@
 		A3964AA41A33696600908E6A /* Well-KnownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Well-KnownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3964AA91A33696600908E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3964AAA1A33696600908E6A /* Well_KnownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Well_KnownTests.swift; sourceTree = "<group>"; };
+		C419D1711A524AF20054CEC2 /* DFConfigController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFConfigController.swift; sourceTree = "<group>"; };
 		C45067781A45727C00B591E6 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		C450677A1A4573E600B591E6 /* Config.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */,
 				C4DA7F581A4DA62E00011F6A /* DFPicerViewController.swift */,
+				C419D1711A524AF20054CEC2 /* DFConfigController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				A3964A921A33696600908E6A /* AppDelegate.swift in Sources */,
 				A3964A951A33696600908E6A /* Well_Known.xcdatamodeld in Sources */,
 				C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */,
+				C419D1721A524AF20054CEC2 /* DFConfigController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
