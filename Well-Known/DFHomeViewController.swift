@@ -9,7 +9,13 @@
 import UIKit
 import MapKit
 
-class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
+enum NavigationItemTag: Int {
+    case kLeft,
+    kRight,
+    kCenter
+}
+
+class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerViewDelegate, MKMapViewDelegate,CLLocationManagerDelegate {
     let pic = UIPickerView()
     let displayButton = UIButton()
     let map = MKMapView()
@@ -27,6 +33,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         initMoveNowPositionButton()
         
         resetAllLayout()
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +56,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
 // MARK: - Navigation
     func initNavigation() {
         initDisplayButton()
+        initNavigationBarItem()
     }
     
 // MARK: 表示させる災害の変更するためのボタン
@@ -168,6 +176,43 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         setLayoutMap()
         setLayoutMoveNowPositionButton()
     }
+// MARK: -
+    func touchNavigationItem(button: UIButton) {
+        
+        //presentViewController(n, animated: true, completion: nil)
+        if let tag = NavigationItemTag(rawValue: button.tag) {
+            switch tag {
+            case .kCenter:
+                break
+            case .kRight:
+                break
+            case .kLeft:
+                if (navigationController != nil) {
+                    let configView = DFConfigController()
+                    navigationController?.pushViewController(configView, animated: true)
+                }else {
+                    println("navigationController is null pointer")
+                }
+                break
+            default:
+                break
+            }
+        }else {
+            println("There isn't a planet at position \(button.tag)")
+        }
+        
+    }
+// MARK: - navigation
+    func initNavigationBarItem() {
+        let leftItem = UIBarButtonItem(title: "left", style: .Plain, target: self, action: "touchNavigationItem:")
+        leftItem.tag = NavigationItemTag.kLeft.rawValue
+        navigationItem.leftBarButtonItem = leftItem
+        
+        let rightItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: "touchNavigationItem:")
+        rightItem.tag = NavigationItemTag.kRight.rawValue
+        navigationItem.rightBarButtonItem = rightItem
+    }
+    
     
     
     /*

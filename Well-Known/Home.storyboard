@@ -59,10 +59,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PlF-f9-75p">
-                        <barButtonItem key="leftBarButtonItem" title="config" id="e27-pF-Uu5"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3ar-Rz-RF6"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="PlF-f9-75p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaG-9m-33C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

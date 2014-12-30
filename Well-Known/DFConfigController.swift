@@ -9,5 +9,13 @@
 import UIKit
 
 class DFConfigController: ViewController {
-   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.redColor()
+        navigationItem.title = "設定"
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
