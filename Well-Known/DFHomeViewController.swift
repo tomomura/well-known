@@ -188,8 +188,9 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
                 break
             case .kLeft:
                 if (navigationController != nil) {
-                    let configView = DFConfigController()
-                    navigationController?.pushViewController(configView, animated: true)
+                    let nextStoryBorad = UIStoryboard(name: "Config", bundle: NSBundle.mainBundle())
+                    let configVC = nextStoryBorad.instantiateInitialViewController() as DFConfigController
+                    navigationController?.pushViewController(configVC, animated: true)
                 }else {
                     println("navigationController is null pointer")
                 }
@@ -204,7 +205,7 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
     }
 // MARK: - navigation
     func initNavigationBarItem() {
-        let leftItem = UIBarButtonItem(title: "left", style: .Plain, target: self, action: "touchNavigationItem:")
+        let leftItem = UIBarButtonItem(title: "設定", style: .Plain, target: self, action: "touchNavigationItem:")
         leftItem.tag = NavigationItemTag.kLeft.rawValue
         navigationItem.leftBarButtonItem = leftItem
         

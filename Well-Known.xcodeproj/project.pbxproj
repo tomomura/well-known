@@ -15,6 +15,11 @@
 		A3964A9F1A33696600908E6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3964A9D1A33696600908E6A /* LaunchScreen.xib */; };
 		A3964AAB1A33696600908E6A /* Well_KnownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3964AAA1A33696600908E6A /* Well_KnownTests.swift */; };
 		C419D1721A524AF20054CEC2 /* DFConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419D1711A524AF20054CEC2 /* DFConfigController.swift */; };
+		C419D1781A52E58F0054CEC2 /* config_01.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1751A52E58F0054CEC2 /* config_01.png */; };
+		C419D1791A52E58F0054CEC2 /* config_02.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1761A52E58F0054CEC2 /* config_02.png */; };
+		C419D17A1A52E58F0054CEC2 /* config_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1771A52E58F0054CEC2 /* config_03.png */; };
+		C419D17D1A54270B0054CEC2 /* DFConfigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419D17B1A54270B0054CEC2 /* DFConfigTableViewCell.swift */; };
+		C419D17E1A54270B0054CEC2 /* DFConfigTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C419D17C1A54270B0054CEC2 /* DFConfigTableViewCell.xib */; };
 		C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45067781A45727C00B591E6 /* Introduction.storyboard */; };
 		C450677B1A4573E600B591E6 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677A1A4573E600B591E6 /* Config.storyboard */; };
 		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
@@ -47,6 +52,11 @@
 		A3964AA91A33696600908E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3964AAA1A33696600908E6A /* Well_KnownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Well_KnownTests.swift; sourceTree = "<group>"; };
 		C419D1711A524AF20054CEC2 /* DFConfigController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFConfigController.swift; sourceTree = "<group>"; };
+		C419D1751A52E58F0054CEC2 /* config_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_01.png; sourceTree = "<group>"; };
+		C419D1761A52E58F0054CEC2 /* config_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_02.png; sourceTree = "<group>"; };
+		C419D1771A52E58F0054CEC2 /* config_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_03.png; sourceTree = "<group>"; };
+		C419D17B1A54270B0054CEC2 /* DFConfigTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFConfigTableViewCell.swift; sourceTree = "<group>"; };
+		C419D17C1A54270B0054CEC2 /* DFConfigTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFConfigTableViewCell.xib; sourceTree = "<group>"; };
 		C45067781A45727C00B591E6 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		C450677A1A4573E600B591E6 /* Config.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -99,6 +109,7 @@
 		A3964A8E1A33696600908E6A /* Well-Known */ = {
 			isa = PBXGroup;
 			children = (
+				C419D1731A52E5680054CEC2 /* Resources */,
 				C4DA7F571A4DA52000011F6A /* ViewController */,
 				A3964A911A33696600908E6A /* AppDelegate.swift */,
 				A3964A961A33696600908E6A /* ViewController.swift */,
@@ -110,6 +121,8 @@
 				A3964A9D1A33696600908E6A /* LaunchScreen.xib */,
 				A3964A931A33696600908E6A /* Well_Known.xcdatamodeld */,
 				A3964A8F1A33696600908E6A /* Supporting Files */,
+				C419D17B1A54270B0054CEC2 /* DFConfigTableViewCell.swift */,
+				C419D17C1A54270B0054CEC2 /* DFConfigTableViewCell.xib */,
 			);
 			path = "Well-Known";
 			sourceTree = "<group>";
@@ -137,6 +150,24 @@
 				A3964AA91A33696600908E6A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C419D1731A52E5680054CEC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C419D1741A52E57C0054CEC2 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C419D1741A52E57C0054CEC2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C419D1751A52E58F0054CEC2 /* config_01.png */,
+				C419D1761A52E58F0054CEC2 /* config_02.png */,
+				C419D1771A52E58F0054CEC2 /* config_03.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		C4DA7F571A4DA52000011F6A /* ViewController */ = {
@@ -232,10 +263,14 @@
 			files = (
 				C450677B1A4573E600B591E6 /* Config.storyboard in Resources */,
 				C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */,
+				C419D1781A52E58F0054CEC2 /* config_01.png in Resources */,
 				A3964A9A1A33696600908E6A /* Main.storyboard in Resources */,
+				C419D17A1A52E58F0054CEC2 /* config_03.png in Resources */,
 				C450677D1A45740B00B591E6 /* Home.storyboard in Resources */,
 				A3964A9F1A33696600908E6A /* LaunchScreen.xib in Resources */,
+				C419D17E1A54270B0054CEC2 /* DFConfigTableViewCell.xib in Resources */,
 				A3964A9C1A33696600908E6A /* Images.xcassets in Resources */,
+				C419D1791A52E58F0054CEC2 /* config_02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +293,7 @@
 				A3964A921A33696600908E6A /* AppDelegate.swift in Sources */,
 				A3964A951A33696600908E6A /* Well_Known.xcdatamodeld in Sources */,
 				C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */,
+				C419D17D1A54270B0054CEC2 /* DFConfigTableViewCell.swift in Sources */,
 				C419D1721A524AF20054CEC2 /* DFConfigController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
