@@ -12,8 +12,20 @@ class DFTutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let page = EAIntroPage()
+//        page.title = "ようこそWell-Knownへ"
         
-        // Do any additional setup after loading the view.
+        var page1 = EAIntroPage()
+        page1.title = "ようこそWell-Knownへ"
+        page1.desc = "Page 1 description"
+        page1.bgImage = UIImage(named: "config_01.png")
+        
+        var page2 = EAIntroPage()
+        page2.title = "Title 2"
+        page2.desc = "Page 2 description"
+        
+        var introView = EAIntroView(frame: self.view.frame, andPages: [page1, page2])
+        introView.showInView(self.view, animateDuration: 0.3)
     }
 
     override func didReceiveMemoryWarning() {

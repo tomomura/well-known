@@ -22,7 +22,7 @@ class DFConfigController: ViewController, UITableViewDataSource, UITableViewDele
     
     
     let imgArray: NSArray = ["config_01.png", "config_02.png", "config_03.png"]
-    let hazardTypeString: NSArray = ["津波", "土砂", "浸水"]
+    let hazardTypeString: NSArray = ["津波注意エリアお知らせ", "土砂注意エリアお知らせ", "浸水注意エリアお知らせ"]
     
     // Sectionで使用する配列を定義する.
     let mySections: NSArray = ["災害予想エリアお知らせ"]

@@ -33,6 +33,9 @@ class DFHomeViewController: ViewController, UIPickerViewDataSource, UIPickerView
         initMoveNowPositionButton()
         
         resetAllLayout()
+        
+//        let test = DFTutorialViewController()
+//        presentViewController(test, animated: true, completion: nil)
     
     }
 
