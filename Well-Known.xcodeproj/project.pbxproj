@@ -22,6 +22,7 @@
 		C419D18A1A56AED20054CEC2 /* config_01.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1871A56AED20054CEC2 /* config_01.png */; };
 		C419D18B1A56AED20054CEC2 /* config_02.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1881A56AED20054CEC2 /* config_02.png */; };
 		C419D18C1A56AED20054CEC2 /* config_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1891A56AED20054CEC2 /* config_03.png */; };
+		C41DCB681A5E223F00407E98 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41DCB671A5E223F00407E98 /* Accelerate.framework */; };
 		C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45067781A45727C00B591E6 /* Introduction.storyboard */; };
 		C450677B1A4573E600B591E6 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677A1A4573E600B591E6 /* Config.storyboard */; };
 		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
@@ -64,6 +65,7 @@
 		C419D1871A56AED20054CEC2 /* config_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_01.png; sourceTree = "<group>"; };
 		C419D1881A56AED20054CEC2 /* config_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_02.png; sourceTree = "<group>"; };
 		C419D1891A56AED20054CEC2 /* config_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_03.png; sourceTree = "<group>"; };
+		C41DCB671A5E223F00407E98 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C45067781A45727C00B591E6 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		C450677A1A4573E600B591E6 /* Config.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41DCB681A5E223F00407E98 /* Accelerate.framework in Frameworks */,
 				C4DA7F5B1A4EFBCD00011F6A /* CoreLocation.framework in Frameworks */,
 				C4DA7F561A4C73D800011F6A /* MapKit.framework in Frameworks */,
 				97114084FCF52403DBF98F96 /* libPods.a in Frameworks */,
@@ -106,6 +109,7 @@
 		8906F544084F51806EF338CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C41DCB671A5E223F00407E98 /* Accelerate.framework */,
 				BF49A3C623BFB871F4254D77 /* libPods.a */,
 			);
 			name = Frameworks;
