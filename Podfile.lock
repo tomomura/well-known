@@ -1,10 +1,20 @@
 PODS:
   - EAIntroView (2.6.4)
+  - FMDB (2.4):
+    - FMDB/standard (= 2.4)
+  - FMDB/common (2.4)
+  - FMDB/standard (2.4):
+    - FMDB/common
+  - NAModalSheet (0.0.6)
 
 DEPENDENCIES:
   - EAIntroView (~> 2.6.0)
+  - FMDB
+  - NAModalSheet (~> 0.0.1)
 
 SPEC CHECKSUMS:
   EAIntroView: 8f66dc6b79f2d52db26af8fc5476a05ffc549d4c
+  FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
+  NAModalSheet: 8b53b0307aa421a5fdea6c9577563c723ff049d8
 
 COCOAPODS: 0.36.0.beta.1

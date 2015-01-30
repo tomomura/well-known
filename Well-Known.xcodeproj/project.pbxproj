@@ -22,9 +22,14 @@
 		C419D18A1A56AED20054CEC2 /* config_01.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1871A56AED20054CEC2 /* config_01.png */; };
 		C419D18B1A56AED20054CEC2 /* config_02.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1881A56AED20054CEC2 /* config_02.png */; };
 		C419D18C1A56AED20054CEC2 /* config_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C419D1891A56AED20054CEC2 /* config_03.png */; };
+		C41DCB681A5E223F00407E98 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41DCB671A5E223F00407E98 /* Accelerate.framework */; };
+		C41DCB6B1A5E328700407E98 /* DFHazardTypeSelectPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DCB691A5E328700407E98 /* DFHazardTypeSelectPickerViewController.swift */; };
 		C45067791A45727C00B591E6 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45067781A45727C00B591E6 /* Introduction.storyboard */; };
 		C450677B1A4573E600B591E6 /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677A1A4573E600B591E6 /* Config.storyboard */; };
 		C450677D1A45740B00B591E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450677C1A45740B00B591E6 /* Home.storyboard */; };
+		C48958201A6FFB4D008109B3 /* DFUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C489581F1A6FFB4D008109B3 /* DFUtility.swift */; };
+		C48958221A70AC01008109B3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C48958211A70AC01008109B3 /* libsqlite3.0.dylib */; };
+		C48958241A70ACD4008109B3 /* DFHazardSpotDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48958231A70ACD4008109B3 /* DFHazardSpotDatabase.swift */; };
 		C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */; };
 		C4DA7F561A4C73D800011F6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA7F551A4C73D800011F6A /* MapKit.framework */; };
 		C4DA7F591A4DA62E00011F6A /* DFPicerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DA7F581A4DA62E00011F6A /* DFPicerViewController.swift */; };
@@ -64,9 +69,14 @@
 		C419D1871A56AED20054CEC2 /* config_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_01.png; sourceTree = "<group>"; };
 		C419D1881A56AED20054CEC2 /* config_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_02.png; sourceTree = "<group>"; };
 		C419D1891A56AED20054CEC2 /* config_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_03.png; sourceTree = "<group>"; };
+		C41DCB671A5E223F00407E98 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C41DCB691A5E328700407E98 /* DFHazardTypeSelectPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFHazardTypeSelectPickerViewController.swift; sourceTree = "<group>"; };
 		C45067781A45727C00B591E6 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		C450677A1A4573E600B591E6 /* Config.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		C450677C1A45740B00B591E6 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C489581F1A6FFB4D008109B3 /* DFUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFUtility.swift; sourceTree = "<group>"; };
+		C48958211A70AC01008109B3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C48958231A70ACD4008109B3 /* DFHazardSpotDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFHazardSpotDatabase.swift; sourceTree = "<group>"; };
 		C4DA7F531A4C0E6800011F6A /* DFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFHomeViewController.swift; sourceTree = "<group>"; };
 		C4DA7F551A4C73D800011F6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C4DA7F581A4DA62E00011F6A /* DFPicerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFPicerViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48958221A70AC01008109B3 /* libsqlite3.0.dylib in Frameworks */,
+				C41DCB681A5E223F00407E98 /* Accelerate.framework in Frameworks */,
 				C4DA7F5B1A4EFBCD00011F6A /* CoreLocation.framework in Frameworks */,
 				C4DA7F561A4C73D800011F6A /* MapKit.framework in Frameworks */,
 				97114084FCF52403DBF98F96 /* libPods.a in Frameworks */,
@@ -106,6 +118,8 @@
 		8906F544084F51806EF338CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C48958211A70AC01008109B3 /* libsqlite3.0.dylib */,
+				C41DCB671A5E223F00407E98 /* Accelerate.framework */,
 				BF49A3C623BFB871F4254D77 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -151,6 +165,9 @@
 				C419D17B1A54270B0054CEC2 /* DFConfigTableViewCell.swift */,
 				C419D17C1A54270B0054CEC2 /* DFConfigTableViewCell.xib */,
 				C419D1811A564F6F0054CEC2 /* Well-Known-Bridging-Header.h */,
+				C41DCB691A5E328700407E98 /* DFHazardTypeSelectPickerViewController.swift */,
+				C489581F1A6FFB4D008109B3 /* DFUtility.swift */,
+				C48958231A70ACD4008109B3 /* DFHazardSpotDatabase.swift */,
 			);
 			path = "Well-Known";
 			sourceTree = "<group>";
@@ -261,6 +278,11 @@
 				TargetAttributes = {
 					A3964A8B1A33696600908E6A = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A3964AA31A33696600908E6A = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -352,12 +374,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48958241A70ACD4008109B3 /* DFHazardSpotDatabase.swift in Sources */,
 				A3964A971A33696600908E6A /* ViewController.swift in Sources */,
 				C4DA7F591A4DA62E00011F6A /* DFPicerViewController.swift in Sources */,
 				A3964A921A33696600908E6A /* AppDelegate.swift in Sources */,
 				A3964A951A33696600908E6A /* Well_Known.xcdatamodeld in Sources */,
 				C4DA7F541A4C0E6800011F6A /* DFHomeViewController.swift in Sources */,
+				C48958201A6FFB4D008109B3 /* DFUtility.swift in Sources */,
 				C419D17D1A54270B0054CEC2 /* DFConfigTableViewCell.swift in Sources */,
+				C41DCB6B1A5E328700407E98 /* DFHazardTypeSelectPickerViewController.swift in Sources */,
 				C419D1801A564BAD0054CEC2 /* DFTutorialViewController.swift in Sources */,
 				C419D1721A524AF20054CEC2 /* DFConfigController.swift in Sources */,
 			);
